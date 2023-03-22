@@ -1,0 +1,38 @@
+body {
+
+    margin: 0;
+
+
+
+}
+
+
+.navbar {
+
+display: inline;
+}
+
+
+
+
+
+
+.menu li {
+
+    display: inline;
+    word-spacing: 3px;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    
+
+    text-align: center;
+    list-style: none;
+
+}
+
+
+.overlay-menu {
+
+    display: none;
+}
