@@ -1,0 +1,17 @@
+
+.header-fresher {
+border: solid 1px blue;
+width: 250px;
+margin: 5px;
+padding: 20px;
+text-align: center;
+background-color: #0474DC;
+color: white;
+
+}
+
+.fresh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

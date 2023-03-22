@@ -10,7 +10,7 @@ function Footer() {
         <section className="flex-content padding_1x">
           <h3>FRESH START</h3>
           <p>
-           This is some placeholder text that needs to be review before the iste is publish
+           This is some placeholder text that needs to be review before the iste is publishgit
             
           </p>
           

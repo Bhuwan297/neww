@@ -1,48 +1,47 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import Footer from './Footer'
 import '../components/css/Layout.css'
 
 const Layout = () => {
   return (
     <>
-  
-  <nav id="navbar" className="navbar">
-  <div className="nav-wrapper">
-   
-    <div className="logo">
-   
-      <a href="#home"><i className="fa fa-angellist"></i>FRESH<span>START</span></a>
-    </div>
+    <header id="navbar">
+      <nav className="navbar-container container">
+      <Link to="/" className="navabr-link">
+FRESH START
+      </Link>
+      <button
+          type="button"
+          id="navbar-toggle"
+          aria-controls="navbar-menu"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+        </button>
+        <div id="navbar-menu">
 
-   
-    <ul id="menu" className="menu">
-      <li><a href="#home">Home</a></li>
-   <li><a href="#services">Services</a></li>
-   <li><a href="#about">About</a></li>
-   <li><a href="#contact">Contact</a></li>
-    
-    </ul>
-
-
-  </div>
-</nav>
-
-
-
-<div className="menuIcon">
-  <span className="icon icon-bars"></span>
-  <span className="icon icon-bars overlay"></span>
-</div>
-
-
-<div className="overlay-menu">
-  <ul id="menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-</div>
+      
+        <ul className="navbar-links">
+          <li>
+            <Link to="/" className="navabr-link">Home</Link>
+          </li>
+          <li>
+            <Link to="/login" className="navabar-link">Login</Link>
+          </li>
+          <li>
+            <Link to="/fresher" className="navabar-link">Fresher Guide</Link>
+          </li>
+          <li>
+            <Link to="/contact" className="navbar-link">Contact</Link>
+          </li>
+        </ul>
+        </div>
+      </nav>
+      </header>
+      <br></br>
    
       <Outlet />
 
