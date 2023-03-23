@@ -1,24 +1,24 @@
-body {
+nav  {
 
-    margin: 0;
-
-
+width: 100%;
+    display: inline-block;
+   
 
 }
 
+.navbar-links {
+    word-spacing: 10px;
 
- nav .navbar-menu {
-
-    display: inline-block;
+    
+    right: -50;
 }
 
 
-.navbar-links ul li {
+
+
+nav ul .navbar-links a .navbar-link  {
+    width: 100%;
+    position: relative;
     display: inline-block;
- }
-
-
-.overlay-menu {
-
-    display: none;
+    font: uppercase;
 }
