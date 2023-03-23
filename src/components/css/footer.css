@@ -132,6 +132,7 @@ footer{
     color:var(--lite);
     font-family: 'Poppins', sans-serif;
     border-top: solid #fff 3px;
+    border-radius: 8px 0   0 0 ;
 }
 
 footer h3{
