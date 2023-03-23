@@ -10,8 +10,8 @@ const Home = () => {
     <div className="community">
  <section className="hero image-as-background" style={{ backgroundImage: `url(${heroim})` }}>
 
-	<header class="hero-container">
-		<h1 class="hero-title">This is a large hero section</h1>
+	<header className="hero-container">
+		<h1 className="hero-title">This is a large hero section</h1>
 		<p>This is the text that describes the hero section.</p>
 	</header>
 </section>

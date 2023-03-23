@@ -3,7 +3,7 @@
     --black:#000;
     --dark:#1E1E1E;
     --gray:rgba(1,1,1,0.6);
-    --lite:rgba(255,255,255,0.6);
+    --lite:#fff;
     --primary:#0474DC;
     --secondary:#6DC7FF;
 }
@@ -12,11 +12,6 @@
 /***************************
             DEFAULT
 ****************************/
-body{
-    margin:0;
-    overflow-x:hidden !important;
-    font-family: 'Poppins', sans-serif;
-}
 
 a{
     text-decoration:none !important;
@@ -131,8 +126,12 @@ fieldset{
                FOOTER
 ****************************/
 footer{
+    position: absolute;
+    bottom: 0;
     background-color:var(--primary);
     color:var(--lite);
+    font-family: 'Poppins', sans-serif;
+    border-top: solid #fff 3px;
 }
 
 footer h3{

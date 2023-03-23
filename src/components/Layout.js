@@ -6,7 +6,7 @@ const Layout = () => {
   return (
     <>
     <header id="navbar">
-      <nav className="navbar-container container">
+      <nav className="navbar-container">
       <Link to="/" className="navabr-link">
 FRESH START
       </Link>

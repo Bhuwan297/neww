@@ -7,29 +7,15 @@ body {
 }
 
 
-.navbar {
+ nav .navbar-menu {
 
-display: inline;
+    display: inline-block;
 }
 
 
-
-
-
-
-.menu li {
-
-    display: inline;
-    word-spacing: 3px;
-    text-decoration: none;
-    padding: 10px;
-    text-align: center;
-    
-
-    text-align: center;
-    list-style: none;
-
-}
+.navbar-links ul li {
+    display: inline-block;
+ }
 
 
 .overlay-menu {
