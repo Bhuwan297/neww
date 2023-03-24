@@ -17,7 +17,7 @@ const Layout = () => {
           <div className="logo">FRESH<span>START</span></div>
           <ul className="nav-links">
             <li className="nav-link"><Link to="/">Home</Link></li>
-            <li className="nav-link"><Link to="/team">Our Team</Link></li>
+            <li className="nav-link"><Link to="/">About</Link></li>
             <li className="nav-link dropdown">
               <a href="" className="dropdown">Services <i className="bi bi-chevron-compact-down"></i></a>
               <ul className="dropdown-list">
@@ -25,19 +25,19 @@ const Layout = () => {
                 <li className="nav-link"><a href="">Service 2</a></li>
               </ul>
             </li>
-            <li className="nav-link"><Link to="/">Blog</Link></li>
+            <li className="nav-link"><Link to="/">Contact</Link></li>
           </ul>
         </div>
         <div className="cta">
-          <button className="btn btn-secondary">Log In</button>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn btn-secondary">SignUp</button>
+          <button className="btn btn-primary">Login</button>
         </div>
         <div className="menu">
           <button className="btn btn-primary menu" onClick={handleMenuClick}><i className="bi-list"></i></button>
           {menuOpen && (
             <ul className="nav-mobile">
               <li className="nav-link"><Link to="/">Home</Link></li>
-              <li className="nav-link"><Link to="/">Our Team</Link></li>
+              <li className="nav-link"><Link to="/">About</Link></li>
               <li className="nav-link dropdown">
                 <a href="" className="dropdown">Services <i className="bi bi-chevron-compact-down"></i></a>
                 <ul className="dropdown-list">
@@ -45,8 +45,11 @@ const Layout = () => {
                   <li className="nav-link"><a href="">Service 2</a></li>
                 </ul>
               </li>
-              <li className="nav-link"><Link to="/blog">Blog</Link></li>
+              <li className="nav-link"><Link to="/blog">Contact</Link></li>
+              <li className="nav-link"><Link to="/blog">SignUp</Link></li>
+              <li className="nav-link"><Link to="/blog">Login</Link></li>
             </ul>
+            
           )}
         </div>
       </nav>
