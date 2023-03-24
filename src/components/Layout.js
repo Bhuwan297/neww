@@ -17,15 +17,15 @@ const Layout = () => {
           <div className="logo">FRESH<span>START</span></div>
           <ul className="nav-links">
             <li className="nav-link"><Link to="/">Home</Link></li>
-            <li className="nav-link"><Link to="/">About</Link></li>
+            <li className="nav-link"><Link to="about">About</Link></li>
             <li className="nav-link dropdown">
               <a href="" className="dropdown">Services <i className="bi bi-chevron-compact-down"></i></a>
               <ul className="dropdown-list">
-                <li className="nav-link"><a href="">Service 1</a></li>
-                <li className="nav-link"><a href="">Service 2</a></li>
+                <li className="nav-link"><a href="">Community</a></li>
+                <li className="nav-link"><Link to="fresher">Fresher Guide</Link></li>
               </ul>
             </li>
-            <li className="nav-link"><Link to="/">Contact</Link></li>
+            <li className="nav-link"><Link to="contact">Contact</Link></li>
           </ul>
         </div>
         <div className="cta">
@@ -37,12 +37,12 @@ const Layout = () => {
           {menuOpen && (
             <ul className="nav-mobile">
               <li className="nav-link"><Link to="/">Home</Link></li>
-              <li className="nav-link"><Link to="/">About</Link></li>
+              <li className="nav-link"><Link to="about">About</Link></li>
               <li className="nav-link dropdown">
                 <a href="" className="dropdown">Services <i className="bi bi-chevron-compact-down"></i></a>
                 <ul className="dropdown-list">
                   <li className="nav-link"><a href="">Service 1</a></li>
-                  <li className="nav-link"><a href="">Service 2</a></li>
+                  <li className="nav-link"><Link to="fresher">Fresher Guide</Link></li>
                 </ul>
               </li>
               <li className="nav-link"><Link to="/blog">Contact</Link></li>

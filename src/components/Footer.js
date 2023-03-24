@@ -22,20 +22,7 @@ function Footer() {
           <a href="#">Investor Relations</a>
           <a href="#">Terms of Service</a>
         </section>
-        <section className="flex-content padding_1x">
-          <h3>Features</h3>
-          <a href="#">Jobs</a>
-          <a href="#">Placeholder</a>
-          <a href="#">Placeholder</a>
-          <a href="#">Placeholder</a>
-        </section>
-        <section className="flex-content padding_1x">
-          <h3>Resources</h3>
-          <a href="#">Guides</a>
-          <a href="#">Research</a>
-          <a href="#">Experts</a>
-          <a href="#">Agencies</a>
-        </section>
+    
         <section className="flex-content padding_1x">
           <h3>Newsletter</h3>
           <p>You can trust us. we only send promo offers,</p>

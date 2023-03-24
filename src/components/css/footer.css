@@ -130,7 +130,10 @@ fieldset{
 ****************************/
 footer{
     
-    bottom: 0;
+    position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
     background-color:var(--primary);
     color:var(--lite);
     font-family: 'Poppins', sans-serif;

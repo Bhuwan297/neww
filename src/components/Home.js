@@ -1,6 +1,17 @@
 import aboutus from '../images/aboutus.png'
 import heroimg from '../images/heroimg.png'
 import companies from '../images/jobspartners.png'
+
+import com1 from '../images/comm.png';
+
+import com2 from '../images/comm2.png';
+
+import com3 from '../images/comm3.png';
+
+
+import com4 from '../images/commm5.png';
+
+
 import './css/home.css'
 
 
@@ -101,9 +112,60 @@ At Freshstart, our goal is to help international
 <br></br>
 
 <a href='#' className='viewmore'> VIEW MORE SERVICES</a>
+<img src={companies} className='jobsimg' />
+
+</div>
+<h3>Our Community</h3>
+    <p>
+    Our mission is to provide an online 
+    platform dedicated to helping our 
+    students connect with the right people and places.   
+           Read more....
+
+    </p>
+    <br></br>
+
+
+<div className='ourcommunity'>
+
+
+
+
+<div className='comimg'>
+<img src={com1} className='commsimgaes' />
+
+</div>
+
+<div className='comimg'>
+<img src={com2} className='commsimgaes' />
+
+</div>
+
+
+<div className='comimg'>
+<img src={com3} className='commsimgaes' />
+
+</div>
+
+
+<div className='comimg'>
+<img src={com4} className='commsimgaes' />
+
+</div>
+
+
 
 
 </div>
+
+<div className='blog'>
+  <h3>BLOG</h3>
+  <p>PLEASE CHECK OUT OUR BLOG FOR THE LATEST INFORMATION ON THINGS COMING UP</p>
+
+
+
+</div>
+
 
     </div>
   );

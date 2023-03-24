@@ -6,6 +6,7 @@ import Login from "./components/Login.js";
 import Contact from "./components/contact.js";
 import NoPage from "./components/NoPage";
 import Fresher from "./components/Freshergude";
+import About  from "./components/About";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
           <Route path="fresher" element={<Fresher />} />
+          <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
         </Route>
