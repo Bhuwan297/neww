@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
 import './css/footer.css';
 import { FaFacebook, FaTwitter, FaDribbble, FaLinkedin } from 'react-icons/fa';
 
@@ -17,10 +17,13 @@ function Footer() {
         </section>
         <section className="flex-content padding_1x">
           <h3>Quick Links</h3>
-          <a href="#">Jobs</a>
-          <a href="#">Brand Assets</a>
-          <a href="#">Investor Relations</a>
-          <a href="#">Terms of Service</a>
+          <Link to="/">Home</Link>
+          <Link to="about">About</Link>
+          <Link to="fresher">FresherGuide</Link>
+          <Link to="/">Community</Link>
+          <Link to="contact">Contact</Link>
+          <Link to="login">Login</Link>
+          <Link to="contact">SignUp</Link>
         </section>
     
         <section className="flex-content padding_1x">
