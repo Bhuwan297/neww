@@ -1,4 +1,4 @@
-
+import aboutus from '../images/aboutus.png'
 
 import './css/home.css'
 
@@ -33,6 +33,20 @@ Relocating to the UK is a daunting process for international students.
        SIGNUP
 
 </a>
+   </div>
+
+   <div className='aboutus'>
+
+    <h4>ABOUT US</h4>
+<p>
+What can Freshstart do for you?
+At Freshstart, our goal is to help international
+ students get settled into college life as quickly
+  and easily as possible. We understand how daunting
+  the prospect of attending a university can be, especially
+ in a new country with a new culture and language. Read more....
+</p>
+<img src={aboutus} className='aboutus' />
    </div>
 
     </div>

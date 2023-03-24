@@ -135,6 +135,7 @@ a:hover{
     transition: all 0.5s ease;
   }
   .menu:hover>.nav-mobile{
+    margin-top: 70px;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -145,12 +146,15 @@ a:hover{
     list-style: none;
     transition: all 0.5s ease;
     width:100vw;
+    height: 100vh;
     
   }
 
+ 
+
   .dropdown:hover>ul{
     position:relative;
-    background-color:transparent;
+    background-color:var(--light-black)
   }
   .nav-mobile li {
     margin: 8px 0;
