@@ -18,7 +18,7 @@ const Layout = () => {
     <header>
       <nav className="nav">
         <div className="nav-main">
-          <div className="logo"> <Link to="/">FRESH<span>START</span></Link></div>
+          <div className="logo"> <Link to="/">FRESH <span className="startcolor">START</span></Link></div>
           <ul className="nav-links">
             <li className="nav-link"><Link to="/">Home</Link></li>
             <li className="nav-link"><Link to="about">About</Link></li>

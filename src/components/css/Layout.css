@@ -37,9 +37,18 @@ nav{
     text-transform: uppercase;
     font-weight:bold;
     letter-spacing: 4px;
+   
+
+
+}
+
+.logo a {
+    font-weight: 700;
+   
 }
 .logo span{
-    color:rgb(169, 185, 185);
+    color:#0474DC;
+    font-weight: 600;
 }
 .nav-links{
     display:flex;
