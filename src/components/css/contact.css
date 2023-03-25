@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
   }
   body {
     font-family: "Inter", Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
   }
   .formbold-mb-5 {
     margin-bottom: 20px;
