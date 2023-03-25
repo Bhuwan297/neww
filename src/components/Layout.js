@@ -10,8 +10,12 @@ const Layout = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleMenuItemClick = () => {
+    setMenuOpen(false);
+  };
+
   return (
-    <div>
+    <header>
       <nav className="nav">
         <div className="nav-main">
           <div className="logo"> <Link to="/">FRESH<span>START</span></Link></div>
@@ -19,9 +23,9 @@ const Layout = () => {
             <li className="nav-link"><Link to="/">Home</Link></li>
             <li className="nav-link"><Link to="about">About</Link></li>
             <li className="nav-link dropdown">
-              <a href="" className="dropdown">Services <i className="bi bi-chevron-compact-down"></i></a>
+            <Link to="#" className="dropdown">Services <i className="bi bi-chevron-compact-down"></i></Link>
               <ul className="dropdown-list">
-                <li className="nav-link"><a href="">Community</a></li>
+              <li className="nav-link"><Link to="/blog">Community</Link></li>
                 <li className="nav-link"><Link to="fresher">Fresher Guide</Link></li>
               </ul>
             </li>
@@ -36,18 +40,18 @@ const Layout = () => {
           <button className="btn btn-primary menu" onClick={handleMenuClick}><i className="bi-list"></i></button>
           {menuOpen && (
             <ul className="nav-mobile">
-              <li className="nav-link"><Link to="/">Home</Link></li>
-              <li className="nav-link"><Link to="about">About</Link></li>
-              <li className="nav-link dropdown">
-                <a href="" className="dropdown">Services <i className="bi bi-chevron-compact-down"></i></a>
+              <li className="nav-link" onClick={handleMenuItemClick}><Link to="/">Home</Link></li>
+              <li className="nav-link" onClick={handleMenuItemClick}><Link to="about">About</Link></li>
+              <li className="nav-link dropdown" onClick={handleMenuItemClick}>
+                <Link to="#" className="dropdown">Services <i className="bi bi-chevron-compact-down"></i></Link>
                 <ul className="dropdown-list">
-                  <li className="nav-link"><a href="">Service 1</a></li>
-                  <li className="nav-link"><Link to="fresher">Fresher Guide</Link></li>
+                  <li className="nav-link" onClick={handleMenuItemClick}><Link to="fresher">Fresher Guide</Link></li>
+                  <li className="nav-link" onClick={handleMenuItemClick}><Link to="fresher">Fresher Guide</Link></li>
                 </ul>
               </li>
-              <li className="nav-link"><Link to="/blog">Contact</Link></li>
-              <li className="nav-link"><Link to="/blog">SignUp</Link></li>
-              <li className="nav-link"><Link to="/blog">Login</Link></li>
+              <li className="nav-link" onClick={handleMenuItemClick}><Link to="/blog">Contact</Link></li>
+              <li className="nav-link" onClick={handleMenuItemClick}><Link to="/blog">SignUp</Link></li>
+              <li className="nav-link" onClick={handleMenuItemClick}><Link to="/blog">Login</Link></li>
             </ul>
             
           )}
@@ -55,8 +59,13 @@ const Layout = () => {
       </nav>
       <Outlet />
       <Footer />
-    </div>
+    </header>
   );
 };
 
+
+
+
 export default Layout;
+
+

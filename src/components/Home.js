@@ -1,5 +1,5 @@
 import aboutus from '../images/aboutus.png'
-import heroimg from '../images/heroimg.png'
+
 import companies from '../images/jobspartners.png'
 
 import com1 from '../images/comm.png';
@@ -32,7 +32,6 @@ Relocating to the UK is a daunting process for international students.
  Click on the button below to get started
 </p>
 
-<img src={heroimg} className='heroimg' />
 
 
    </div>

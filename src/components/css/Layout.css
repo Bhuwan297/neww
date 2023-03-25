@@ -126,38 +126,57 @@ a:hover{
 /** dark mode switch
 **/
 @media only screen and (max-width: 700px) {
-  .nav-links, .cta{
-    display:none;
-    transition: all 0.5s ease;
-  }
-  .menu{
-    display:flex;
-    transition: all 0.5s ease;
-  }
-  .menu:hover>.nav-mobile{
-    margin-top: 70px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    position:absolute;
-    top:0;
-    left:0;
-    list-style: none;
-    transition: all 0.5s ease;
-    width:100vw;
-    height: 100vh;
+    /* Hide navigation links and call-to-action button */
+    .nav-links, .cta{
+      display:none;
+      transition: all 0.5s ease;
+    }
+  
+    /* Show the menu on hover */
+    .menu{
+      display:flex;
+      transition: all 0.5s ease;
+      position: relative;
+      z-index: 1; /* Bring menu to front */
+    }
+    .menu:hover > .nav-mobile{
+      margin-top: 70px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      position:fixed;
+      top:0;
+      left:0;
+      list-style: none;
+      transition: all 0.5s ease;
+      width:100vw;
+      height: 100vh;
+      background-color: white; /* Set background color to white */
+      z-index: 2; /* Bring menu to front */
+      overflow: auto; /* Enable scrolling for long menus */
+    }
+  
+    /* Show submenu on hover */
+    .dropdown:hover > ul{
+      position:relative;
+      background-color:var(--light-black);
+    }
     
+    /* Set margin for each item in the mobile menu */
+    .nav-mobile li {
+      margin: 8px 0;
+    }
+  
+    /* Hide the rest of the body */
+    body {
+      overflow: hidden;
+    }
+  
+    /* Redirect to the URL of the clicked menu item */
+    .nav-mobile li a {
+      color: black; /* Change link color */
+      text-decoration: none;
+    }
   }
-
- 
-
-  .dropdown:hover>ul{
-    position:relative;
-    background-color:var(--light-black)
-  }
-  .nav-mobile li {
-    margin: 8px 0;
-  }
-
-} 
+  
