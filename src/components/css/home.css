@@ -5,26 +5,33 @@ body {
 }
 
 
-.hero {
+.hero1 {
 
-    width: 50%;
-    text-align: left;
-    margin-left: 15px;
+
+    width: 100%;
+    margin-left: 25px;
+    display: inline-block;
+   
+ 
 }
 
-.hero h3 {
+.hero1 h3 {
     font-size: 36px;
     color: black;
+    width: 50%;
+   
     
 }
-.hero  p {
+.hero1  p {
 
+    width: 50%;
     word-spacing: 3px;
     font-weight: 5;
 }
 
 .buttonhero {
-    margin: 10px;
+    margin: 25px;
+    text-align: center;
 
 }
 
@@ -49,57 +56,154 @@ body {
 
 }
 
-.heroimg {
 
-height: 20vh;
+
+
+/* BASE */
+
+
+a {
+text-decoration: none;
+transition: all 0.3s ease;
+}
+
+
+/* HERO */
+.hero {
+
 position: relative;
-top: 50;
+
+padding-bottom: 80px;
+background: url('../../images/boy-and-girl-giving-high-five-to-each-other.png') center top no-repeat;
+background-size: cover;
+color: white !important; 
+overflow: hidden;
+height: 30vh;
 
 }
 
-
-.services a {
-
-    width: 15%;
-    display: inline-block;
+.hero h1 {
+margin: 50px 0 20px;
+font-family: fontMT;
+font-size: 35px;
 }
 
-.services {
-
-    border: solid;
-    height: 15vh;
-    display: inline-flex;
-    width: 22%;
-    margin: 12px;
-    padding: 10px;
-    border-radius: 10px;
+.hero h1 span {
+font: 700 60px/1 fontDS;
+display: block;
 }
 
-#blueback {
-    background-color: blue;
-    color: black;
+.hero h2 {
+margin-left: auto;
+margin-right: auto;
+font-size: 1em;
+font-weight: 400;
+padding: 20px;
 }
 
-#yellowback {
-    background-color: #FFA500;
-    color: black;
+@media only screen and (min-width: 37.5em) {
+.hero {
+/* height:80vh; */
 }
 
-.viewmore {
-    border: solid 3px;
-    background-color: #FFA500;
-    text-align: center;
+.hero h1 {
+font-size: 50px;
+}
+
+.hero h1 span {
+font-size: 76px;
+}
+
+.hero h2 {
+width: 76%;
+font-size: 18px;
+}
+}
+
+/* WRAPPER */
+.wrapper {
+margin: 0 auto;
+width: 96%;
+max-width: 1120px;
+}
+
+/* SECTION */
+.section {
+padding: 60px 0;
+}
+
+.section__title {
+font-size: 24px;
+color: purple;
+text-align: center;
+
+margin: 14px 0;
+}
+
+.section__intro {
+display: block;
+text-align: center;
+margin: 0 5% 30px;
+}
+
+@media only screen and (min-width: 43.75em) {
+.section__intro {
+margin-left: 15%;
+margin-right: 15%;
+}
+}
+
+.section--cta {
+color: #454545;
+background: #f1f1f1;
+}
+
+/* BOX ICONS */
+.box {
+display: flex;
+flex: 1 0 100%;
+margin-bottom: 20px;
+background: #f9f9f9;
+}
+
+.box__grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.box__title {
 
 }
 
-
-.jobsimg {
-    margin-top: 10px;
-    width: 100%;
-
+.box__more {
+color: pink;
 }
 
+.box__content {
+color: #454545;
+text-align: center;
+padding: 20px;
+}
 
+.box__content > i {
+color: purple;
+}
+
+.box__content:hover .box__more {
+color: darken(pink, 5%);
+}
+
+.box__content:hover .box__more i {
+padding-left: 4px;
+transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (min-width: 43.75em) {
+.box {
+flex: 0 0 30%;
+
+}}
 
 /* MOBILE VUEW */
 
@@ -124,14 +228,7 @@ top: 50;
     }
 
 
-.aboutus {
 
-    text-align: center;
-    width: 100%;
-   padding: 40px;
-   font-size: 72px;
-
-}
 
 .FresherGuide {
     text-align: center;
@@ -151,4 +248,68 @@ margin-top: 15px;
     display: inline-flex;
     padding: 1px;
  
+}
+
+
+
+    
+.title1 {
+    font-size: 66px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 10px;
+   
+  }
+  
+  .description1 {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 40px;
+ 
+  }
+  
+  .cta1 {
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .start-trial1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    border-radius: 10px;
+    width: 192px;
+    height: 73px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 130px;
+    
+  }
+
+  .overall1 {
+
+
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    background-color: #FFA500;
+    color: black;
+  }
+
+.freshergude {
+    margin-top: 20px;
+
+text-align: center;
+font-size: 36px;
+font-weight: 600;
+}
+
+.freshergude img {
+    height: 30vh;
 }
