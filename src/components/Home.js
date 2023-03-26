@@ -127,8 +127,12 @@ const Home = () => {
   <hr></hr>
 
   <img src={fresher}  className="hello"/>
+
+
+
+  
 </div>
-      
+
 
 
     </div>
