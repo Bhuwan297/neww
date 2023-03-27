@@ -69,7 +69,7 @@ const Home = () => {
               <a className="box__content" href="#">
                
                 <h3 className="box__title">FRESHER GUIDE</h3>
-                <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p>
+                <p>Duis neque leo cursu ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p>
                 <span className="box__more">Read more </span>
               </a>
             </article>
