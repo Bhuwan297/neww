@@ -54,7 +54,7 @@ const Layout = () => {
                 </ul>
               </li>
               <li className="nav-link" onClick={handleMenuItemClick}><Link to="/blog">Contact</Link></li>
-              <li className="nav-link" onClick={handleMenuItemClick}><Link to="signin">SignUp</Link></li>
+              <li className="nav-link" onClick={handleMenuItemClick}><Link to="signup">SignUp</Link></li>
               <li className="nav-link" onClick={handleMenuItemClick}><Link to="login">Login</Link></li>
             </ul>
             
