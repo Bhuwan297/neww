@@ -34,7 +34,7 @@ body {
 	font-weight: normal;
 	line-height: 1.5;
 	color: var(--color-black);
-	background: var(--color-light);
+	
 }
 a, button {
 	font-family: inherit;
@@ -61,6 +61,7 @@ img {
 	width: 100%;
 	padding: 0 2rem;
 	margin: 0 auto;
+	
 }
 .ion-logo-apple {
 	font-size: 1.65rem;
@@ -115,6 +116,8 @@ img {
 	color: var(--color-black);
 	background: var(--color-white);
 	box-shadow: var(--shadow-large);
+	border: solid 2.5px black;
+	border-radius: 10px;
 }
 .main .wrapper .form {
 	width: 100%;
@@ -137,7 +140,7 @@ img {
 	padding: 0.75rem 1.25rem;
 	border: none;
 	outline: none;
-	border-radius: 2rem;
+	border-radius: 1rem;
 	color: var(--color-black);
 	background: var(--color-light);
 	text-transform: unset;

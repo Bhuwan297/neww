@@ -7,6 +7,7 @@ import Contact from "./components/contact.js";
 import NoPage from "./components/NoPage";
 import Fresher from "./components/Freshergude";
 import About  from "./components/About";
+import SignUp from "./components/signup";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
+          <Route path="signup" element={<SignUp />} />
           <Route path="fresher" element={<Fresher />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />

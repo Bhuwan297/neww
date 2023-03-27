@@ -33,8 +33,11 @@ const Layout = () => {
           </ul>
         </div>
         <div className="cta">
+        <Link to="signup">
           <button className="btn btn-secondary">SignUp</button>
+          </Link>
           <Link to="login">
+
           <button className="btn btn-primary">Login</button></Link>
         </div>
         <div className="menu">
@@ -51,7 +54,7 @@ const Layout = () => {
                 </ul>
               </li>
               <li className="nav-link" onClick={handleMenuItemClick}><Link to="/blog">Contact</Link></li>
-              <li className="nav-link" onClick={handleMenuItemClick}><Link to="/blog">SignUp</Link></li>
+              <li className="nav-link" onClick={handleMenuItemClick}><Link to="signin">SignUp</Link></li>
               <li className="nav-link" onClick={handleMenuItemClick}><Link to="login">Login</Link></li>
             </ul>
             

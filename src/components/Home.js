@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 import fresher from '../images/concept-of-remote-team.png'
 
 import './css/home.css'
@@ -27,14 +27,22 @@ const Home = () => {
     
       </section>
       <div className='buttonhero'>
-    <a href='#' className='getStarted'>
+        <Link to="login"> 
+    <button className='getStarted'>
       GET STARTED
 
-    </a>
-    <a href='#' className='signup'>
+    </button>
+    </Link>
+   
+    <Link to="signup">
+          
+    <button className='signup'>
        SIGNUP
 
-</a>
+</button> 
+</Link>
+
+
    </div>
 
    
@@ -45,7 +53,7 @@ const Home = () => {
 
           <div className="box__grid">
             <article className="box">
-              <a className="box__content" href="#">
+              <p className="box__content" >
           
                 <h3 className="box__title">CONTACT</h3>
                 <p>
@@ -53,30 +61,30 @@ const Home = () => {
                  You can contact us about any thing about the platform or finding your way around the city
                  </p>
                 <span className="box__more">Read more </span>
-              </a>
+              </p>
             </article>
 
             <article className="box">
-              <a className="box__content" href="#">
+              <p className="box__content" >
               
                 <h3 className="box__title">ABOUT</h3>
                 <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p>
                 <span className="box__more">Read more </span>
-              </a>
+              </p>
             </article>
 
             <article className="box">
-              <a className="box__content" href="#">
+              <p className="box__content" >
                
                 <h3 className="box__title">FRESHER GUIDE</h3>
-                <p>Duis neque leo cursu ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p>
+                <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p>
                 <span className="box__more">Read more </span>
-              </a>
+              </p>
             </article>
           </div>
           <div className="box__grid">
             <article className="box">
-              <a className="box__content" href="#">
+              <p className="box__content" href="#">
           
                 <h3 className="box__title">COMMUNITY</h3>
                 <p>
@@ -84,25 +92,25 @@ const Home = () => {
                   
                   </p>
                 <span className="box__more">Read more </span>
-              </a>
+              </p>
             </article>
 
             <article className="box">
-              <a className="box__content" href="#">
+              <p className="box__content" href="#">
               
                 <h3 className="box__title">FIND JOBS</h3>
                 <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p>
                 <span className="box__more">Read more </span>
-              </a>
+              </p>
             </article>
 
             <article className="box">
-              <a className="box__content" href="#">
+              <p className="box__content" href="#">
                
                 <h3 className="box__title">FIND EVENTS</h3>
                 <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p>
                 <span className="box__more">Read more </span>
-              </a>
+              </p>
             </article>
           </div>
         </div>
@@ -126,7 +134,7 @@ const Home = () => {
   <h3>THE FRESHER GUIDE TO HELP YOU</h3>
   <hr></hr>
 
-  <img src={fresher}  className="hello"/>
+  <img src={fresher}  className="hello"  alt='NOImage' />
 
 
 
