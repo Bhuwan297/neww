@@ -34,7 +34,8 @@ const Layout = () => {
         </div>
         <div className="cta">
           <button className="btn btn-secondary">SignUp</button>
-          <button className="btn btn-primary">Login</button>
+          <Link to="login">
+          <button className="btn btn-primary">Login</button></Link>
         </div>
         <div className="menu">
           <button className="btn btn-primary menu" onClick={handleMenuClick}><i className="bi-list"></i></button>
@@ -51,7 +52,7 @@ const Layout = () => {
               </li>
               <li className="nav-link" onClick={handleMenuItemClick}><Link to="/blog">Contact</Link></li>
               <li className="nav-link" onClick={handleMenuItemClick}><Link to="/blog">SignUp</Link></li>
-              <li className="nav-link" onClick={handleMenuItemClick}><Link to="/blog">Login</Link></li>
+              <li className="nav-link" onClick={handleMenuItemClick}><Link to="login">Login</Link></li>
             </ul>
             
           )}
